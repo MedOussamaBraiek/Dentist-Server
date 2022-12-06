@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose'); 
 const patientRouter = require('./routers/patientRouters');
+const userRouter = require('./routers/userRouters');
 const cors = require("cors")
 // Express app
 const app = express();
@@ -35,3 +36,4 @@ app.use(cors(corsOptions))
 
 
 app.use('/patients',patientRouter);
+app.use('/user',userRouter);
