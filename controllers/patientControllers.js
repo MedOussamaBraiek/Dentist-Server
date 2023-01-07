@@ -14,7 +14,6 @@ const add_patient = (req, res) => {
 
     patient.save()
         .then(() => {
-            console.log("Added Successfully!");
             res.sendStatus(200);
         })
         .catch((err) => {
