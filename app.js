@@ -21,7 +21,7 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .catch((err) => console.log(err)); 
 
     
-const whitelist = ["http://localhost:3000"]
+const whitelist = ["https://dentiste-karim.vercel.app"]
 const corsOptions = {
     origin: function (origin, callback) {
         if (!origin || whitelist.indexOf(origin) !== -1) {
